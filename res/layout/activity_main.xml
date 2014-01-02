@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".MainActivity" >
+
+	<TextView
+		android:id="@+id/redLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:text="@string/redLabel"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<SeekBar
+		android:id="@+id/redBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/redLabel"
+		android:max="255" />
+
+	<TextView
+		android:id="@+id/greenLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/redBar"
+		android:text="@string/greenLabel"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<SeekBar
+		android:id="@+id/greenBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/greenLabel"
+		android:max="255" />
+
+	<TextView
+		android:id="@+id/blueLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/greenBar"
+		android:text="@string/blueLabel"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+		android:id="@+id/greenNum"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/greenLabel"
+		android:layout_alignParentRight="true"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+		android:id="@+id/redNum"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/redLabel"
+		android:layout_alignParentRight="true"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+		android:id="@+id/blueNum"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/blueLabel"
+		android:layout_alignParentRight="true"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<SeekBar
+		android:id="@+id/blueBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/blueLabel"
+		android:max="255" />
+
+	<TextView
+		android:id="@+id/freqLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/blueBar"
+		android:text="@string/freqLabel"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+		android:id="@+id/freqUnit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/freqLabel"
+		android:layout_alignParentRight="true"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="@string/freqUnit" />
+	<TextView
+		android:id="@+id/freqNum"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/freqLabel"
+		android:layout_toLeftOf="@id/freqUnit"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<SeekBar
+		android:id="@+id/freqBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/freqLabel"
+		android:max="13" />
+
+	<TextView
+		android:id="@+id/dutyLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/freqBar"
+		android:text="@string/dutyLabel"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+		android:id="@+id/dutyUnit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/dutyLabel"
+		android:layout_alignParentRight="true"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="@string/dutyUnit" />
+	<TextView
+		android:id="@+id/dutyNum"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/dutyLabel"
+		android:layout_toLeftOf="@id/dutyUnit"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<SeekBar
+		android:id="@+id/dutyBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/dutyLabel"
+		android:max="8" />
+	<Button
+		android:id="@+id/colorBox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/dutyBar"
+		android:layout_centerHorizontal="true"
+		android:text="@string/colorBoxLabel" />
+	<ToggleButton
+		android:id="@+id/toggleButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/dutyBar"
+		android:layout_toRightOf="@id/colorBox"
+		android:onClick="onToggled" />
+
+	<TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/colorBox"
+		android:gravity="bottom|center_horizontal"
+		android:text="@string/devinfo"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

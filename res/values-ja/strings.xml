@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">蛍</string>
+	<string name="greenLabel">緑</string>
+	<string name="blueLabel">青</string>
+	<string name="redLabel">赤</string>
+	<string name="freqLabel">周波数</string>
+	<string name="dutyLabel">デューティー比</string>
+	<string name="freqUnit">Hz</string>
+	<string name="dutyUnit">%</string>
+	<string name="colorBoxLabel">\u0020\u0020\u0020\u0020\u0020\u0020</string>
+	<string name="devinfo">機種によっては画面OFF時のみLEDが点灯したり、充電中はLEDが橙色にしか点灯しない場合があります。</string>
+	
+</resources>

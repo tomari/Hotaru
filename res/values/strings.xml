@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Firefly</string>
+	<string name="greenLabel">Green</string>
+	<string name="blueLabel">Blue</string>
+	<string name="redLabel">Red</string>
+	<string name="freqLabel">Frequency</string>
+	<string name="dutyLabel">Duty ratio</string>
+	<string name="freqUnit">Hz</string>
+	<string name="dutyUnit">%</string>
+	<string name="colorBoxLabel">\u0020\u0020\u0020\u0020\u0020\u0020</string>
+	<string name="devinfo">Some devices use LED only when the screen is off. Others do not use LED when it is charging.</string>
+</resources>
