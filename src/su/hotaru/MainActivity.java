@@ -49,6 +49,7 @@ public class MainActivity extends Activity {
 		TextView fld;
 		protected ColorComponentChangeListener(TextView v) {
 			fld=v;
+			onProgressChanged(null,0,false);
 		}
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -63,6 +64,7 @@ public class MainActivity extends Activity {
 		protected PseudoSeekBarListener(TextView numView,float[] tbl) {
 			this.numView=numView;
 			this.tbl=tbl;
+			onProgressChanged(null,0,false);
 		}
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
